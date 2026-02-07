@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title><%= locals.title %></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1' content="<%= locals.description %>">
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" defer src="/js/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="desktop">
+            <div class="shortcut">
+                <img src="https://64.media.tumblr.com/fda654985437a7b2664e5833e086c69b/0b9b5160404412fb-f5/s540x810/43cf0d594a16ef9fb0449eb89883009e9276f8dd.png" alt="PC">
+                <span>Meu PC</span>
+            </div>
+
+            <div class="window">
+                <div class="title-bar">
+                    <div class="title-bar-text">Victor_Blog.exe</div>
+                    <div class="title-bar-controls">
+                        <button aria-label="Minimize">–</button>
+                        <button aria-label="Maximize">□</button>
+                        <button aria-label="Close">X</button>
+                    </div>
+                </div>
+                <%- include('../partials/header.ejs') %>
+                <%- include('../partials/search.ejs') %>
+                <%- body %>
+            </div>
+
+            <div class="taskbar">
+                <button class="start-button">
+                    <img src="https://img.icons8.com/?size=100&id=wG9MSO7XoMy2&format=png&color=000000" />
+                    Iniciar
+                </button>
+                <div class="taskbar-divider"></div>
+                <div class="time" id="clock">12:00 PM</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

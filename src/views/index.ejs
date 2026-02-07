@@ -1,0 +1,25 @@
+<div class="window-body">
+    <header class="blog-header">
+        <h1>Bem-vindo ao meu espaço 🌿</h1>
+        <p>Pensamentos rápidos entre bolhas e pixels.</p>
+    </header>
+
+    <main class="feed">
+        <% data.forEach(post => { %>            
+        <a href="/posts/<%= post._id %>" class="post-link">
+            <article class="post">
+                <span class="date"><%= post.created_at.toDateString() %></span>
+                <p><%= post.title %></p>
+            </article>
+        </a>
+        <% }) %>
+
+        <% if (nextPage != null) { %>
+            <a href="/?page=<%= nextPage %>" class="pagination win95-button-link">
+                <button class="win95-button">
+                    <span>Anterior</span>
+                </button>
+            </a>
+        <% } %>
+    </main>
+</div>
