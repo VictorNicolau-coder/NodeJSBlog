@@ -7,6 +7,9 @@
     <meta name='viewport' content='width=device-width, initial-scale=1' content="<%= locals.description %>">
     <link rel="stylesheet" href="/css/style.css">
     <script type="text/javascript" defer src="/js/script.js"></script>
+    <% if (typeof extraCSS !== 'undefined') { %>
+        <link rel="stylesheet" href="/css/<%= extraCSS %>.css">
+    <% } %>
 </head>
 <body>
     <div class="container">

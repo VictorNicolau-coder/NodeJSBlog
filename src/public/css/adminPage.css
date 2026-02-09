@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'W95FA';
+  src: url('../font/w95fa.woff2') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.login-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+/* Estilo dos Inputs */
+.field-row-stacked {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+input {
+    font-family: 'W95FA', sans-serif;
+    padding: 4px;
+    border: 2px solid;
+    border-color: #808080 #ffffff #ffffff #808080; /* Chanfro para dentro */
+    outline: none;
+    margin-top: 5px;
+}
+
+/* Botões Clássicos */
+.form-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn-classic {
+    min-width: 75px;
+    padding: 4px 10px;
+    background: #ced0cf;
+    border: 2px solid;
+    border-color: #ffffff #808080 #808080 #ffffff;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.btn-classic:active {
+    border-color: #808080 #ffffff #ffffff #808080;
+    padding: 5px 9px 3px 11px; /* Simula o clique */
+}
